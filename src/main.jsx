@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 import Products from "./pages/Products";
 import ProductPreview from "./components/ProductPreview";
+import SingleProduct from "./pages/SingleProduct";
 
 const router = createBrowserRouter([
   {
@@ -29,8 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: ":id",
-        // element: <ProductPreview />,
-        element: <h3>single Product</h3>,
+        element: <SingleProduct />,
       },
     ],
   },

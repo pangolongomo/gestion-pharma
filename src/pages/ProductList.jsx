@@ -6,7 +6,7 @@ function ProductList() {
   return (
     <ul>
       {data.map((e) => (
-        <li>
+        <li key={e.id}>
           <ProductPreview product={e} seeMore={false}></ProductPreview>
         </li>
       ))}
